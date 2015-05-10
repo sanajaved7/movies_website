@@ -1,6 +1,7 @@
 import webbrowser
 
 class Movie():
+    '''Creates instances of movies to display on website '''
     def __init__(self, movie_title, movie_storyline, poster_image, youtube_trailer):
         self.title = movie_title
         self.storyline = movie_storyline
@@ -8,4 +9,5 @@ class Movie():
         self.trailer_youtube_url = youtube_trailer
 
     def show_trailer(self):
+        ''' Opens web browser and plays link of movie trailer '''
         webbrowser.open(self.trailer_url)
